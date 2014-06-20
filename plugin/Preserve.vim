@@ -36,8 +36,8 @@ endif
 
 "my current mappings, comment out if you don't want to use them
 "fix indentation
-nmap <silent> <Leader>G :call Preserve("normal gg=G")<CR>
+"nmap <silent> <Leader>G :call Preserve("normal gg=G")<CR>
 " Removes trailing whitespace
-nmap <silent> <Leader>w :call Preserve("%s/\\s\\+$//e")<CR>
+"nmap <silent> <Leader>w :call Preserve("%s/\\s\\+$//e")<CR>
 
 
