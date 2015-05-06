@@ -4,7 +4,7 @@ function! Preserve(command)
     " Do the business:
     execute a:command
     " Clean up: restore previous search history, and cursor position
-    call winrestview(winview)	
+    call winrestview(winview)
 endfunction
 
 function! PreserveSave()
@@ -13,7 +13,7 @@ endfunction
 
 function! PreserveRestore()
     if exists('b:winview')
-        call winrestview(b:winview)	
+        call winrestview(b:winview)
         unlet b:winview
     else
         throw "Use :PreserveSave, before :PreserveRestore"
